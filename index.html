@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Interest Calcultor</title>
+    <style>
+        #incacl{
+            align-items: center;
+            display: flex;
+        }
+        #container{
+            width: 250px;
+            background-color: aqua;
+            border-radius: 10px;
+           
+        }
+       
+        #Interest{
+            width: 200px;
+            height: 20px;
+            margin: 20px 20px 20px 20px;
+        
+        }
+       
+       
+        .btn{
+            width: 50px;
+            height: 50px;
+          margin: 11px;
+          margin-top: 20px;
+          margin-left: 15px;
+            border-radius: 10px;
+           font-size: 20px;
+            border: none;
+            align-items: center;
+            background-color: yellow;
+           
+        }
+        .btn:hover{
+            background-color: yellowgreen;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="incacl">
+    <div id="container">
+       
+        <input id="Interest" type="text" placeholder="Interest Calculator">
+      
+        <button class="btn" onclick="
+         ins = ins+'1';
+         document.querySelector('#Interest').value=ins;">1</button>
+        <button class="btn" onclick="
+        ins = ins+'2';
+        document.querySelector('#Interest').value=ins;">2</button>
+        <button class="btn" onclick="
+        ins = ins+'3';
+        document.querySelector('#Interest').value=ins;">3</button>
+        <button class="btn" onclick="
+        ins = ins+'4';
+        document.querySelector('#Interest').value=ins;">4</button>
+        <button class="btn" onclick="
+        ins = ins+'5';
+        document.querySelector('#Interest').value=ins;">5</button>
+        <button class="btn" onclick="
+        ins = ins+'6';
+        document.querySelector('#Interest').value=ins;">6</button>
+        <button class="btn" onclick="
+        ins = ins+'7';
+        document.querySelector('#Interest').value=ins;">7</button>
+        <button class="btn" onclick="
+        ins = ins+'8';
+        document.querySelector('#Interest').value=ins;">8</button>
+        <button class="btn" onclick="
+        ins = ins+'9';
+        document.querySelector('#Interest').value=ins;">9</button>
+        <button class="btn" onclick="
+        ins = ins+'0';
+        document.querySelector('#Interest').value=ins;">0</button>
+        <button class="btn" onclick="
+        let result = eval(ins)/100;
+        ins = result;
+        document.querySelector('#Interest').value=ins;">=</button>
+        <button class="btn"onclick="
+        ins = ins+'/';
+        document.querySelector('#Interest').value=ins;">/</button>
+        <button class="btn" onclick="
+        ins = ins+'*';
+        document.querySelector('#Interest').value=ins;">*</button>
+        <button class="btn" onclick="
+        ins = '';
+        document.querySelector('#Interest').value=ins;">C</button>
+        
+    </div>
+</div>
+    
+<script>
+    let ins = '';
+    document.querySelector('#Interest').value=ins;
+</script>
+
+
+
+
+</body>
+</html>
